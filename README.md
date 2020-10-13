@@ -3,7 +3,6 @@
 Here you can find the labs for our CodingNomads online Python Programming course.
 
 ---
-#  This is an edit for me just to practice using git ;-)
 
 ## Push me to your GitHub
 
