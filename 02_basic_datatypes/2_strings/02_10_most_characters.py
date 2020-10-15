@@ -11,3 +11,13 @@ CHALLENGE: Can you edit to script to print only the string with the most charact
            into the topic "Conditionals" to solve this challenge.
 
 '''
+first = input("Give me a string please?: ")
+second = input("Thanks, and another one?: ")
+third = input("Cool, one last one?: ")
+
+data = {first: len(first), second: len(second), third: len(third)}
+
+for string in data:
+    print(string, data[string])
+
+print(max(data))

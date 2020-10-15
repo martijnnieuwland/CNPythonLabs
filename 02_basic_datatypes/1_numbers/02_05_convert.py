@@ -10,3 +10,9 @@ Demonstrate how to:
     Take note of what information is lost when some conversions take place.
 
 '''
+print(float(7))
+print(int(5.92))
+print(9.3//2)
+x = float(input("Give me the first of two numbers you want to multiply: "))
+y = float(input("Good. And the second one?: "))
+print("The factor is:", x * y)

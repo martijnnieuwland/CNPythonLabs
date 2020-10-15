@@ -7,4 +7,8 @@ Symbol input: #
 Result: #ore python progra##ing please
 
 '''
+string = input("Check this! Write me a short sentence: ")
+symbol = input("And give me a symbol: ")
+result = string.replace((string[0]), symbol)
 
+print(result)
