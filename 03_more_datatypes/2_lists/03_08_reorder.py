@@ -7,3 +7,20 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+numbers = [int(input("I need ten numbers. Give me one then hit enter: "))]
+count = len(numbers)
+
+while count < 10:
+    numbers.append(int(input(f"{10 - count} more: ")))
+    count = len(numbers)
+print(numbers)
+
+even = 1
+odd = 8
+for n in numbers:
+    while even < 10:
+        print(numbers[even])
+        even += 2
+    while odd >= 0:
+        print(numbers[odd])
+        odd -= 2
