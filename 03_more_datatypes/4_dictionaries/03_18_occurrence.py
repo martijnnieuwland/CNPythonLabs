@@ -6,3 +6,9 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+string = input("Give me a string: ")
+
+letters = {c: string.count(c) for c in string}
+
+print(letters)
