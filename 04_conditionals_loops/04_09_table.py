@@ -8,3 +8,11 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+
+table = list(range(50))
+
+for n in table:
+    if (table.index(n) + 1) % 10 != 0:
+        print(n, end=" ")
+    else:
+        print(n, end="\n")

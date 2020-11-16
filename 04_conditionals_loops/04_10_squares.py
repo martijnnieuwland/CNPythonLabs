@@ -5,3 +5,5 @@ Use a for loop that demonstrates the use of the range function.
 
 '''
 
+for n in range(1, 51):
+    print(n*n)
