@@ -25,3 +25,9 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+
+for person in office:
+    lastname = person['full_name'].split()[-1].upper()
+    name = person['full_name'].split()[0]
+    print(f"{lastname + ', ' + name:<20}{person['item']}")
