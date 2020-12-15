@@ -18,3 +18,36 @@ CLASSES AND INHERITANCE
     Any class attributes you could add?
 
 '''
+
+
+class Movie:
+    def __init__(self, year, title):
+        self.year = year
+        self.title = title
+
+    def __repr__(self):
+        return f"Movie: {self.title}\n" \
+               f"Year: {self.year}"
+
+
+class RomCom(Movie):
+    def __init__(self, year, title):
+        super().__init__(year, title)
+
+    def __repr__(self):
+        return f"RomCom: {self.title}\n" \
+               f"Year: {self.year}"
+
+    def change_name(self, new_title):
+        self.title = new_title
+
+
+class ActionMovie(Movie):
+    def __init__(self, year, title, pg=13):
+        super().__init__(year, title)
+        self.pg = pg
+
+    def __repr__(self):
+        return f"ActionMovie: {self.title}\n" \
+               f"Year: {self.year}\n" \
+               f"PG: {self.pg}"
